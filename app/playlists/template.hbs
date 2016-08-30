@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-md-6 col-lg-4">
+    <div class="list-group">
+      {{#each model as |playlist|}}
+        {{#link-to 'playlists.playlist' playlist tagName='a' class="list-group-item list-group-item-action"}}
+          {{playlist-list-item playlist=playlist}}
+        {{/link-to}}
+      {{/each}}
+    </div>
+  </div>
+  <br class="hidden-md-up">
+  <div class="col-md-6 col-lg-8">
+    {{outlet}}
+  </div>
+</div>
