@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  classNames: ['spotify-play--playlist'],
+  classNames: ['card', 'spotify-play--playlist'],
 
   loading: true,
 

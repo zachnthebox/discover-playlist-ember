@@ -1,6 +1,8 @@
-{{#if loading}}
-  {{loading-indicator}}
-{{/if}}
-<div class="{{if loading 'hidden-xs-up'}}">
-  <iframe src="https://embed.spotify.com/?uri=spotify:trackset:Discover%20Weekly:{{trackIds}}&theme=white" width="300" height="380" frameborder="0" allowtransparency="true" onload={{action 'loaded'}}></iframe>
+<div class="card-block">
+  {{#if loading}}
+    {{loading-indicator}}
+  {{/if}}
+  <div class="{{if loading 'hidden-xs-up'}}">
+    <iframe src="https://embed.spotify.com/?uri=spotify:trackset:Discover%20Weekly:{{trackIds}}&theme=white" width="300" height="380" frameborder="0" allowtransparency="true" onload={{action 'loaded'}}></iframe>
+  </div>
 </div>
