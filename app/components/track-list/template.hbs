@@ -1,0 +1,6 @@
+{{#each tracks as |track index|}}
+  {{track-list-item track=track index=index action='openDetails'}}
+  {{#if (eq track selectedTrack)}}
+    {{track-detail track=track}}
+  {{/if}}
+{{/each}}

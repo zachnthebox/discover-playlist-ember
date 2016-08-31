@@ -1,5 +1,15 @@
 @import "bootstrap";
 
+.explict-image {
+  width: 50px;
+  height: 33px;
+  background: url('/images/explicit.jpg');
+}
+
+.track-detail {
+  background-color: #eceeef;
+}
+
 .track--album-art {
   width: 50px;
   height: 50px;
